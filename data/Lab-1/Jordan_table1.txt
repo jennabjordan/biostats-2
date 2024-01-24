@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = strikeouts ~ at_bats, data = mlb11)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-174.08  -85.65   13.56   73.58  155.88 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 4612.3207  1251.4233   3.686  0.00097 ***
+at_bats       -0.6269     0.2265  -2.767  0.00990 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 97.44 on 28 degrees of freedom
+Multiple R-squared:  0.2148,	Adjusted R-squared:  0.1867 
+F-statistic: 7.658 on 1 and 28 DF,  p-value: 0.009904
+
