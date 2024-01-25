@@ -1,0 +1,31 @@
+
+Call:
+lm(formula = sqrt(5 - score) ~ age * rank * gender + sqrt(bty_avg), 
+    data = evals)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.92602 -0.19974 -0.01793  0.23340  0.74794 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      1.041990   0.343665   3.032  0.00257 ** 
+age                              0.006028   0.006484   0.930  0.35308    
+ranktenure track                -0.117341   0.364002  -0.322  0.74733    
+ranktenured                     -0.654384   0.417905  -1.566  0.11808    
+gendermale                      -0.180314   0.437848  -0.412  0.68067    
+sqrt(bty_avg)                   -0.198159   0.042383  -4.675 3.88e-06 ***
+age:ranktenure track             0.004241   0.007630   0.556  0.57864    
+age:ranktenured                  0.013290   0.008513   1.561  0.11918    
+age:gendermale                  -0.002808   0.008673  -0.324  0.74625    
+ranktenure track:gendermale      1.805558   0.608416   2.968  0.00316 ** 
+ranktenured:gendermale           1.117532   0.532518   2.099  0.03641 *  
+age:ranktenure track:gendermale -0.042981   0.014230  -3.020  0.00267 ** 
+age:ranktenured:gendermale      -0.017655   0.010695  -1.651  0.09948 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2971 on 450 degrees of freedom
+Multiple R-squared:  0.1801,	Adjusted R-squared:  0.1583 
+F-statistic: 8.238 on 12 and 450 DF,  p-value: 4.238e-14
+
