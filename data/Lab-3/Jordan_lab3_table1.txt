@@ -1,0 +1,25 @@
+
+Call:
+glm(formula = Species ~ Area * Elevation + Nearest * Adjacent, 
+    family = quasipoisson(link = log), data = gala)
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       3.048e+00  2.660e-01  11.458 5.53e-11 ***
+Area              1.861e-03  1.049e-03   1.775 0.089136 .  
+Elevation         2.706e-03  6.780e-04   3.991 0.000575 ***
+Nearest           7.558e-04  7.410e-03   0.102 0.919642    
+Adjacent         -2.640e-04  5.441e-04  -0.485 0.632126    
+Area:Elevation   -1.295e-06  5.085e-07  -2.547 0.018026 *  
+Nearest:Adjacent -6.320e-05  1.353e-04  -0.467 0.644798    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for quasipoisson family taken to be 25.27345)
+
+    Null deviance: 3510.73  on 29  degrees of freedom
+Residual deviance:  595.42  on 23  degrees of freedom
+AIC: NA
+
+Number of Fisher Scoring iterations: 5
+
