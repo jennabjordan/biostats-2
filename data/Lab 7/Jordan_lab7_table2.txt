@@ -1,0 +1,4 @@
+          df        AIC
+g.poly3rd  6  -86.29661
+g.poly5th  8 -107.59242
+g.poly7th 10 -122.33182

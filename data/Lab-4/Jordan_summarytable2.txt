@@ -1,0 +1,16 @@
+       Df           SumOfSqs             R2        
+ Min.   : 1.00   Min.   : 273679   Min.   :0.0835  
+ 1st Qu.:31.00   1st Qu.:1638827   1st Qu.:0.5000  
+ Median :61.00   Median :3003976   Median :0.9165  
+ Mean   :41.33   Mean   :2185103   Mean   :0.6667  
+ 3rd Qu.:61.50   3rd Qu.:3140815   3rd Qu.:0.9583  
+ Max.   :62.00   Max.   :3277655   Max.   :1.0000  
+                                                   
+       F             Pr(>F)        
+ Min.   :5.557   Min.   :0.001998  
+ 1st Qu.:5.557   1st Qu.:0.001998  
+ Median :5.557   Median :0.001998  
+ Mean   :5.557   Mean   :0.001998  
+ 3rd Qu.:5.557   3rd Qu.:0.001998  
+ Max.   :5.557   Max.   :0.001998  
+ NA's   :2       NA's   :2         

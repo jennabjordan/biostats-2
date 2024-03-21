@@ -1,0 +1,16 @@
+      npar           AIC            BIC           logLik         deviance        Chisq      
+ Min.   :14.0   Min.   :4678   Min.   :4747   Min.   :-2381   Min.   :4646   Min.   :115.7  
+ 1st Qu.:14.5   1st Qu.:4706   1st Qu.:4773   1st Qu.:-2366   1st Qu.:4675   1st Qu.:115.7  
+ Median :15.0   Median :4734   Median :4799   Median :-2352   Median :4704   Median :115.7  
+ Mean   :15.0   Mean   :4734   Mean   :4799   Mean   :-2352   Mean   :4704   Mean   :115.7  
+ 3rd Qu.:15.5   3rd Qu.:4761   3rd Qu.:4825   3rd Qu.:-2337   3rd Qu.:4732   3rd Qu.:115.7  
+ Max.   :16.0   Max.   :4789   Max.   :4850   Max.   :-2323   Max.   :4761   Max.   :115.7  
+                                                                             NA's   :1      
+       Df      Pr(>Chisq)
+ Min.   :2   Min.   :0   
+ 1st Qu.:2   1st Qu.:0   
+ Median :2   Median :0   
+ Mean   :2   Mean   :0   
+ 3rd Qu.:2   3rd Qu.:0   
+ Max.   :2   Max.   :0   
+ NA's   :1   NA's   :1   

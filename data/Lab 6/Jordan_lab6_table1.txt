@@ -1,0 +1,68 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: 
+sqrt(embryocount) ~ (CONT.10yrmean + RH.10yrmean + log10(MAP.10yrmean) +  
+    sqrt(EVAP.10yrmean))^2 + log10(headbodylength.speciesAVG) +  
+    (1 | binomial) + (0 + CONT.10yrmean | binomial) + (0 + RH.10yrmean |  
+    binomial) + (0 + log10(MAP.10yrmean) | binomial) + (0 + sqrt(EVAP.10yrmean) |  
+    binomial)
+   Data: embs
+Control: lmerControl(optimizer = "bobyqa")
+
+REML criterion at convergence: 7350.7
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.7970 -0.5740  0.0510  0.6395  4.0326 
+
+Random effects:
+ Groups     Name                Variance  Std.Dev.
+ binomial   (Intercept)         2.060e-01 0.453919
+ binomial.1 CONT.10yrmean       1.375e-04 0.011726
+ binomial.2 RH.10yrmean         4.367e-05 0.006609
+ binomial.3 log10(MAP.10yrmean) 1.304e-02 0.114176
+ binomial.4 sqrt(EVAP.10yrmean) 1.098e-04 0.010479
+ Residual                       1.151e-01 0.339302
+Number of obs: 10131, groups:  binomial, 39
+
+Fixed effects:
+                                          Estimate Std. Error t value
+(Intercept)                              4.4897385  1.6465404   2.727
+CONT.10yrmean                           -0.0480824  0.0119252  -4.032
+RH.10yrmean                             -0.0082153  0.0124857  -0.658
+log10(MAP.10yrmean)                      0.1753075  0.3248730   0.540
+sqrt(EVAP.10yrmean)                      0.0008607  0.0148265   0.058
+log10(headbodylength.speciesAVG)        -0.7127211  0.6205487  -1.149
+CONT.10yrmean:RH.10yrmean                0.0002916  0.0001302   2.239
+CONT.10yrmean:log10(MAP.10yrmean)        0.0079132  0.0033578   2.357
+CONT.10yrmean:sqrt(EVAP.10yrmean)        0.0002616  0.0001673   1.564
+RH.10yrmean:log10(MAP.10yrmean)         -0.0018453  0.0031832  -0.580
+RH.10yrmean:sqrt(EVAP.10yrmean)          0.0001884  0.0001398   1.347
+log10(MAP.10yrmean):sqrt(EVAP.10yrmean) -0.0119830  0.0041513  -2.887
+
+Correlation of Fixed Effects:
+             (Intr) CONT.10y RH.10y lg10(MAP.10) s(EVAP l10(.A CONT.10:R
+CONT.10yrmn  -0.488                                                     
+RH.10yrmean  -0.578  0.664                                              
+lg10(MAP.10) -0.590  0.662    0.735                                     
+sq(EVAP.10)  -0.524  0.564    0.666  0.705                              
+lg10(h.AVG)  -0.768 -0.008    0.002 -0.001       -0.002                 
+CONT.10:RH.   0.290 -0.580   -0.626 -0.182       -0.284 -0.011          
+CONT.10:10(   0.319 -0.542   -0.257 -0.677       -0.252  0.005 -0.243   
+CONT.10:(EV   0.128 -0.406   -0.105 -0.034       -0.451 -0.001  0.269   
+RH.10:10(MA   0.602 -0.638   -0.909 -0.913       -0.632 -0.007  0.393   
+RH.10:(EVAP   0.275 -0.237   -0.621 -0.154       -0.471 -0.008  0.331   
+l10(MAP.10):  0.417 -0.388   -0.341 -0.772       -0.733 -0.004  0.015   
+             CONT.10:1 CONT.10:( RH.10:1 RH.10:(
+CONT.10yrmn                                     
+RH.10yrmean                                     
+lg10(MAP.10)                                    
+sq(EVAP.10)                                     
+lg10(h.AVG)                                     
+CONT.10:RH.                                     
+CONT.10:10(                                     
+CONT.10:(EV  -0.190                             
+RH.10:10(MA   0.474     0.023                   
+RH.10:(EVAP  -0.027     0.060     0.343         
+l10(MAP.10):  0.406     0.181     0.539  -0.164 
+fit warnings:
+Some predictor variables are on very different scales: consider rescaling

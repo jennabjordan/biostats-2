@@ -1,0 +1,21 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+temp ~ s(time, k = 10)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 36.86978    0.01238    2979   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+          edf Ref.df    F p-value    
+s(time) 7.981  8.725 21.9  <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.684   Deviance explained = 71.2%
+-REML = -46.328  Scale est. = 0.013937  n = 91

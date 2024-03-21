@@ -1,0 +1,56 @@
+Linear mixed model fit by REML ['lmerMod']
+Formula: weight ~ poly(Time, 2) * Diet + (0 + Time | Chick)
+   Data: ChickWeight
+
+REML criterion at convergence: 4669.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0825 -0.5313  0.0952  0.5013  3.4647 
+
+Random effects:
+ Groups   Name Variance Std.Dev.
+ Chick    Time   6.607   2.57   
+ Residual      156.113  12.49   
+Number of obs: 578, groups:  Chick, 50
+
+Fixed effects:
+                     Estimate Std. Error t value
+(Intercept)           101.166      6.356  15.917
+poly(Time, 2)1       1032.903     97.999  10.540
+poly(Time, 2)2         70.347     20.593   3.416
+Diet2                  19.695     10.844   1.816
+Diet3                  39.413     10.844   3.634
+Diet4                  33.085     10.846   3.050
+poly(Time, 2)1:Diet2  361.236    166.626   2.168
+poly(Time, 2)2:Diet2   52.718     34.288   1.537
+poly(Time, 2)1:Diet3  813.581    166.626   4.883
+poly(Time, 2)2:Diet3  209.527     34.288   6.111
+poly(Time, 2)1:Diet4  519.814    166.756   3.117
+poly(Time, 2)2:Diet4   -6.275     34.830  -0.180
+
+Correlation of Fixed Effects:
+            (Intr) pl(T,2)1 pl(T,2)2 Diet2  Diet3  Diet4  p(T,2)1:D2 p(T,2)2:D2 p(T,2)1:D3
+poly(Tm,2)1  0.970                                                                        
+poly(Tm,2)2  0.006  0.018                                                                 
+Diet2       -0.586 -0.568   -0.003                                                        
+Diet3       -0.586 -0.568   -0.003    0.344                                               
+Diet4       -0.586 -0.568   -0.003    0.343  0.343                                        
+pl(T,2)1:D2 -0.570 -0.588   -0.011    0.970  0.334  0.334                                 
+pl(T,2)2:D2 -0.003 -0.011   -0.601    0.001  0.002  0.002  0.003                          
+pl(T,2)1:D3 -0.570 -0.588   -0.011    0.334  0.970  0.334  0.346      0.006               
+pl(T,2)2:D3 -0.003 -0.011   -0.601    0.002  0.001  0.002  0.006      0.361      0.003    
+pl(T,2)1:D4 -0.570 -0.588   -0.011    0.334  0.334  0.970  0.346      0.006      0.346    
+pl(T,2)2:D4 -0.003 -0.011   -0.591    0.002  0.002  0.004  0.006      0.355      0.006    
+            p(T,2)2:D3 p(T,2)1:D4
+poly(Tm,2)1                      
+poly(Tm,2)2                      
+Diet2                            
+Diet3                            
+Diet4                            
+pl(T,2)1:D2                      
+pl(T,2)2:D2                      
+pl(T,2)1:D3                      
+pl(T,2)2:D3                      
+pl(T,2)1:D4  0.006               
+pl(T,2)2:D4  0.355      0.009    
