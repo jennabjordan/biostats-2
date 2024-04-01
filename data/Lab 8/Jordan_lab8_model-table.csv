@@ -1,0 +1,4 @@
+"","formulas","df","AIC","deltaAIC","AICweight"
+"p1","nEMBS ~ temp_seasonality + precip_seasonality + NFFD + breeding_temp + breeding_precip + NFFD_anomaly",7,7630.25046155133,0,"0.51674626017261538"
+"p2","nEMBS ~ temp_seasonality + precip_seasonality + NFFD",4,7630.3844817604,0.134020209068694,"0.48325373974347319"
+"p3","nEMBS ~ breeding_temp + breeding_precip + NFFD_anomaly",4,7675.33257330243,45.0821117511032,"0.00000000008391144"

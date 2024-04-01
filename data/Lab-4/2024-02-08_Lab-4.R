@@ -1,6 +1,7 @@
 
 birdhab <- read.csv("/Users/jennajordan/Downloads/birdhab.csv", header = TRUE)
 head(birdhab)
+head(birdhab$SUB)
 
 library(vegan)
 

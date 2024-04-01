@@ -1,0 +1,11 @@
+
+Call:  glm(formula = nEMBS ~ breeding_temp + breeding_precip + NFFD_anomaly, 
+    family = poisson, data = litters)
+
+Coefficients:
+    (Intercept)    breeding_temp  breeding_precip     NFFD_anomaly  
+         1.6779          -3.7995          -1.4334          -0.2884  
+
+Degrees of Freedom: 2035 Total (i.e. Null);  2032 Residual
+Null Deviance:	    739.7 
+Residual Deviance: 725 	AIC: 7675

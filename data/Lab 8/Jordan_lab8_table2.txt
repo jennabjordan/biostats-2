@@ -1,0 +1,13 @@
+
+Call:  glm(formula = nEMBS ~ temp_seasonality + precip_seasonality + 
+    NFFD, family = poisson, data = litters)
+
+Coefficients:
+       (Intercept)    temp_seasonality  precip_seasonality  
+            1.7261              3.9833             -0.8448  
+              NFFD  
+          -10.4367  
+
+Degrees of Freedom: 2035 Total (i.e. Null);  2032 Residual
+Null Deviance:	    739.7 
+Residual Deviance: 680 	AIC: 7630
