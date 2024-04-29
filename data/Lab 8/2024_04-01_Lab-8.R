@@ -133,7 +133,7 @@ AICweight <- exp(-0.5*deltaAIC)/sum(exp(-0.5*deltaAIC))
 AICweight <- format(AICweight, scientific = F) #not scientific notation
 
 model.table <- cbind(model.table, deltaAIC, AICweight)
-model.table <- model.table[order(model.table$AIC),] #sort by delta.AIC values (best model at top)
+model.table <- model.table[order(model.table$AIC),] #sort by AIC values (best model at top)
 model.table
   
 write.csv(model.table, file = "Jordan_lab8_model-table.csv") #saves full model comparison as CSV

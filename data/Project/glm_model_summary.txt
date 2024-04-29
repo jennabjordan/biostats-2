@@ -1,0 +1,34 @@
+
+Call:
+glm(formula = transformed_PC1 ~ Treatment * week_number, family = Gamma(link = "log"), 
+    data = normal.data)
+
+Coefficients: (1 not defined because of singularities)
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                              1.7376     0.1108  15.688  < 2e-16 ***
+TreatmentNormal Treatment               -1.1917     0.2667  -4.468 1.16e-05 ***
+week_number2                            -0.3083     0.2477  -1.245 0.214293    
+week_number3                            -0.5901     0.1372  -4.302 2.36e-05 ***
+week_number4                            -0.6729     0.1869  -3.601 0.000377 ***
+week_number5                            -0.5447     0.2477  -2.199 0.028684 *  
+week_number6                            -1.0372     0.3994  -2.597 0.009910 ** 
+week_number7                            -0.8436     0.1720  -4.905 1.61e-06 ***
+week_number8                             0.6424     0.2888   2.224 0.026957 *  
+TreatmentNormal Treatment:week_number2   0.5046     0.3805   1.326 0.185910    
+TreatmentNormal Treatment:week_number3   1.1590     0.2930   3.955 9.76e-05 ***
+TreatmentNormal Treatment:week_number4   1.0261     0.4381   2.342 0.019895 *  
+TreatmentNormal Treatment:week_number5   0.8714     0.4232   2.059 0.040451 *  
+TreatmentNormal Treatment:week_number6   1.1766     0.4951   2.376 0.018170 *  
+TreatmentNormal Treatment:week_number7   1.2404     0.3028   4.096 5.54e-05 ***
+TreatmentNormal Treatment:week_number8       NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for Gamma family taken to be 0.2944359)
+
+    Null deviance: 89.787  on 287  degrees of freedom
+Residual deviance: 68.815  on 273  degrees of freedom
+AIC: 991.49
+
+Number of Fisher Scoring iterations: 5
+
